@@ -2,7 +2,7 @@ module.exports = (ctx) => {
   const register = () => {
     ctx.helper.uploader.register('imgurl-uploader', {
       handle,
-      name: 'ImgURL',
+      name: 'imgurl',
       config: config
     })
   }
@@ -84,7 +84,7 @@ module.exports = (ctx) => {
         type: 'input',
         default: userConfig.uid,
         required: true,
-        message: '通过ImgURL后台获取',
+        message: 'UID, 通过ImgURL后台获取',
         alias: 'UID'
       },
       {
@@ -92,7 +92,7 @@ module.exports = (ctx) => {
         type: 'input',
         default: userConfig.token,
         required: true,
-        message: '通过ImgURL后台获取',
+        message: 'Token, 通过ImgURL后台获取',
         alias: 'Token'
       },
       {
